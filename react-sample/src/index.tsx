@@ -8,6 +8,9 @@ import Hello from './components/Hello';
 import Name from './components/Name';
 import Message from './components/Message';
 import Parent from './components/ContainerSample';
+import { Clock } from './components/EffectClock'
+import { ImageUploader, ImperativeParent } from './components/RefSample';
+import CustomInputHook from "./components/CustomHookWithUseDebugValue"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -20,6 +23,10 @@ root.render(
       <Name />
       <Message />
       <Parent />
+      <Clock />
+      <ImageUploader />
+      <ImperativeParent />
+      <CustomInputHook />
     </React.Fragment>
   </React.StrictMode>
 );
